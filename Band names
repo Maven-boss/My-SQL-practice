@@ -1,0 +1,2 @@
+-- Select only the Names of all the Bands
+SELECT name AS 'Band Name' from bands;
