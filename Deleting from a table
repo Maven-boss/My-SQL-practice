@@ -1,0 +1,5 @@
+-- Delete the Band and Album you added in #8
+DELETE from albums
+WHERE band_id = 8;
+DELETE FROM bands
+WHERE id = 8;
