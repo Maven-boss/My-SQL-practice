@@ -1,0 +1,7 @@
+-- Get the number of Songs for each Band
+SELECT bands.name AS 'Band',
+COUNT(songs.album_id) AS 'Number Of Songs'
+FROM bands
+JOIN albums ON bands.id = albums.band_id
+JOIN songs ON albums.id = songs.album_id
+GROUP BY bands.id;
